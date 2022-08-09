@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous" />
+
+    <title>UAS Program Penjualan Motor</title>
+  </head>
+  <body>
+    <nav class="navbar-light bg-danger sticky-top">
+      <div class="container-fluid" align="center">
+        <a class="navbar-brand" href="Program Penjualan Motor.html"><h3>Program Penjualan Motor</h3></a>
+      </div>
+    </nav>
+    <div class="p-3 mb-2 bg-dark text-light" .bg-info align="center">
+      <hr />
+      <table>
+        <tr>
+          <td><label>Merk Motor</label></td>
+          <td>
+            <select id="Nama">
+              <option value="Honda">Honda</option>
+              <option value="Yamaha">Yamaha</option>
+              <option value="Suzuki">Suzuki</option>
+            </select>
+            <br />
+            </td>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Aksesoris</label></td>
+          <td>
+            <div class="form-check"><input type="checkbox" name="r" id="acc1" value="1" /><label for="acc1" class="form-check-label"> Velg Racing</label></div>
+            <div class="form-check"><input type="checkbox" name="r" id="acc2" value="2" /><label for="acc2" class="form-check-label"> Helm</label></div>
+            <div class="form-check"><input type="checkbox" name="r" id="acc3" value="3" /><label for="acc3" class="form-check-label"> Jaket</label></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Cara Pembayaran</label></td>
+          <td>
+            <div class="form-check"><input type="radio" name="b" id="b1" value="1" /><label for="b1" class="form-check-label"> Tunai</label></div>
+            <div class="form-check"><input type="radio" name="b" id="b2" value="2" /><label for="b2" class="form-check-label"> Kredit</label></div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Harga</label></td>
+          <td><textarea id="harga"></textarea><br /></td>
+        </tr>
+        <tr>
+          <td><label>Bunga/Diskon 10%</label></td>
+          <td><textarea id="bungdis"></textarea><br /></td>
+        </tr>
+        <tr>
+          <td><label>Total</label></td>
+          <td><textarea id="total"></textarea><br /></td>
+        </tr>
+        
+      </table>
+      <hr />
+      <br />
+
+      <button onclick="hasil()">Proses</button>
+      <button onclick="hapus()">Reset</button>
+
+      <script type="text/javascript" src="Jual Motor.js"></script>
+      <hr />
+      <h5>Made by @Jonawawiwawi</h5>
+    </div>
+  </body>
+</html>
